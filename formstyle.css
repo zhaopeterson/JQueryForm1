@@ -1,0 +1,232 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* start form styles */
+
+body	{
+	font: normal .8em/1em 'Lato', sans-serif;
+	background: #eaecf2;
+}
+
+header {
+	background: #fff;
+	height: 160px;
+	width: 100%;
+}
+.banner {
+	width: 60%;
+	max-width: 980px;
+	margin: 0 auto;
+}
+.banner img {
+	max-width: 160px;
+	width: 40%;
+	float: left;
+}
+.banner h1 {
+	font-family: Georgia, serif;
+	font-size: 1.4rem;
+	line-height: 1.4;
+	color: #ec8b04;
+	box-sizing: border-box;
+	padding: 40px 0 60px 120px;
+}
+
+.price {
+	font-size: 2.4rem;
+	position: relative;
+	bottom: -10px;
+}
+.vendor {
+	font-size: 1.2rem;
+	color: #3a6a54;
+	display: block;
+	font-family: 'Lato', sans-serif;;
+}
+
+form * {
+	background: transparent;
+}
+
+input[type=text],input[type=number],input[type=submit],input[type=email],input[type=tel],button, select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border: solid 1px #c3c2c4;
+	background: white;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	padding: 5px;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.group:before, .group:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.group:after { clear: both; }  
+.group { zoom: 1; }  
+
+#regform, #formmessage {
+	padding-top: 20px;
+	width: 80%;
+	margin: 0 auto;
+	max-width: 500px;
+}
+  
+#regform h2 {
+	text-align: center;
+	margin: 0 auto;
+	color: #322e9c;
+	font-size: 0.8rem;
+	font-weight: normal;
+}
+
+#regform ol li {
+	position: relative;
+	list-style: none;
+	padding: 8px;
+	border-top: 1px dotted #EEE;
+	border-bottom: 1px dotted #888;
+}
+
+#regform ol li:first-child {
+	border-top:none;
+}
+
+#regform ol li:last-child {
+	border-bottom:none;
+}
+
+#regform ol li.singleline label {
+	font-weight: normal;
+	display: inline;
+}
+
+#regform ol li label {
+	font-weight: bold;
+	display: inline-block;
+	margin-bottom: 5px;
+	color: #454D4D;
+	text-shadow: 1px 1px 1px #FFF;
+	padding-left: 5px;
+	width: 160px;
+	text-align: right;
+	padding: 0 10px 0 0;
+}
+
+#regform .hint {
+	font-weight: normal;
+	color: #2076c8;
+	margin-left: 10px;
+}
+
+#regform .error {
+	font-weight: normal;
+	color: #cf1925;
+	font-size: 0.6rem;
+	margin-left: 160px;
+}
+
+#regform ol li select {
+	max-width: 60px;
+	width: 30%;
+	display: inline-block;
+	min-width: 40px;	
+	color: #999;
+	font-weight: bold;
+}
+
+#regform button {
+	display:  block;
+	min-width: 100px;
+	padding: 10px 20px;
+	margin: 0 auto;
+	border: 0;
+	color:#FFF;
+	font-size: 1.0rem;
+	font-weight: bold;
+	cursor: pointer;
+	background: #fe9800;	
+}
+
+#regform button:hover {
+	background: #ea643f;
+}
+
+
+
+@media (max-width: 480px) {
+	.banner h1 {
+		font-size: 1.0rem;
+	}
+	.price {
+		font-size: 1.6rem;
+		bottom: -5px;
+	}
+	#regform ol li {
+		width: 90%;
+		margin: 0 auto;
+	}
+	#regform button {
+		margin: 0 0 0 10px;
+	}
+	#regform ol li label {
+		display: block;
+		text-align: left;
+	}
+	input {
+		margin-left:10px;
+	}
+	.banner {
+		width: 90%;
+	}
+	#regform .error {
+		margin-left: 0;
+	}
+}
